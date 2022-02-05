@@ -5,6 +5,7 @@ export class UploadCV extends Component {
   render() {
     return (
       <div id="upload-cv">
+        <p id="upload-title">Finally...</p>
         <p id="motivation">
           Our project aims at giving more insightful data from people
           professional traits to help companies make better decisions on the

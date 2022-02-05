@@ -9,28 +9,28 @@ import "./App.css";
 
 export class App extends Component {
   state = {
-    index: 4,
-    answers: [],
-    formDone: false
+    index: 0,
+    answers: []
   };
 
-  swipeLeft = () => {
+  saveChoice = liked => {
     this.setState({
-      answers: [...this.state.answers, false],
+      answers: [...this.state.answers, liked],
       index: this.state.index + 1
     });
+    if (this.state.index == images.length) {
+      this.saveAnswers();
+    }
   };
 
-  swipeRight = () => {
-    this.setState({
-      answers: [...this.state.answers, true],
-      index: this.state.index + 1
-    });
+  saveAnswers = () => {
+    console.log(this.state.answers);
   };
 
   render() {
     let body = null;
     if (this.state.index == images.length) {
+      console.log(this.state.answers);
       body = <UploadCV />;
     } else {
       const image = images[this.state.index];
@@ -39,8 +39,7 @@ export class App extends Component {
           url={image.url}
           title={image.title}
           description={image.description}
-          swipeLeft={this.swipeLeft}
-          swipeRight={this.swipeRight}
+          saveChoice={this.saveChoice}
         />
       );
     }

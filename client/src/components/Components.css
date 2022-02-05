@@ -12,6 +12,11 @@
   box-shadow: var(--shadow);
 }
 
+#upload-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 #motivation {
   display: block;
   margin: 0 auto;

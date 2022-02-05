@@ -3,23 +3,19 @@ import "./Scroller.css";
 import image from "../icons.png";
 
 export class Scroller extends Component {
-  mouseDown = e => {
-    console.log(e.target);
-  };
-
-  mouseOut = e => {
-    console.log(e.target);
-  };
-
   render() {
     return (
-      <div
-        id="scroller"
-        style={{ backgroundImage: `url(${this.props.url})` }}
-        onMouseDown={this.mouseDown}
-        onMouseOut={this.onMouseOut}
-        onDrag={this.scroll}
-      >
+      <div id="scroller" style={{ backgroundImage: `url(${this.props.url})` }}>
+        <div id="icons-container">
+          <i
+            onClick={() => this.props.saveChoice(false)}
+            className="far fa-thumbs-down choice"
+          ></i>
+          <i
+            onClick={() => this.props.saveChoice(true)}
+            className="far fa-thumbs-up choice"
+          ></i>
+        </div>
         <div id="body">
           <div id="text-container">
             <p id="title">{this.props.title}</p>
