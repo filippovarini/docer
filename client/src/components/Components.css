@@ -1,0 +1,63 @@
+#upload-cv {
+  width: 350px;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -150px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+#motivation {
+  display: block;
+  margin: 0 auto;
+}
+
+#upload-button {
+  background-image: linear-gradient(to right, #fd297b, #ff5864);
+  width: 150px;
+  height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  background: white;
+  z-index: 10;
+  box-shadow: var(--shadow);
+}
+
+#logo {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -20px;
+  display: block;
+}
+
+/* Formdone */
+#formDone {
+  margin-top: 400px;
+  text-align: center;
+}

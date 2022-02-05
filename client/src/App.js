@@ -1,21 +1,57 @@
 import React, { Component } from "react";
 import Scroller from "./components/Scroller";
+import Cookies from "./components/Cookies";
+import Header from "./components/Header";
+import UploadCV from "./components/UploadCV";
+import FormDone from "./components/FormDone";
 import images from "./images";
 import "./App.css";
 
 export class App extends Component {
+  state = {
+    index: 1,
+    answers: [],
+    formDone: false
+  };
+
+  swipeLeft = () => {
+    this.setState({
+      answers: [...this.state.answers, false],
+      index: this.state.index + 1
+    });
+  };
+
+  swipeLeft = () => {
+    this.setState({
+      answers: [...this.state.answers, true],
+      index: this.state.index + 1
+    });
+  };
+
   render() {
+    let body = null;
+    if (this.state.index == images.length) {
+      body = <UploadCV />;
+    } else {
+      const image = images[this.state.index];
+      body = (
+        <Scroller
+          url={image.url}
+          title={image.title}
+          description={image.description}
+        />
+      );
+    }
+
+    if (this.state.formDone) {
+      body = <FormDone />;
+    }
+
     return (
       <div id="app">
-        docer
-        {images.map((image, i) => (
-          <Scroller
-            key={i}
-            url={image.url}
-            title={image.title}
-            description={image.description}
-          />
-        ))}
+        <Header />
+        {body}
+        <Cookies />
       </div>
     );
   }

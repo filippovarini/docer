@@ -1,0 +1,24 @@
+#cookies {
+  position: absolute;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100vw;
+  left: 0px;
+  font-size: 1rem;
+}
+
+#delete {
+  position: absolute;
+  color: red;
+  right: 5px;
+  top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  #cookies {
+    display: none;
+  }
+}
