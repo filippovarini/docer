@@ -9,7 +9,7 @@ import "./App.css";
 
 export class App extends Component {
   state = {
-    index: 1,
+    index: 4,
     answers: [],
     formDone: false
   };
@@ -21,7 +21,7 @@ export class App extends Component {
     });
   };
 
-  swipeLeft = () => {
+  swipeRight = () => {
     this.setState({
       answers: [...this.state.answers, true],
       index: this.state.index + 1
@@ -39,6 +39,8 @@ export class App extends Component {
           url={image.url}
           title={image.title}
           description={image.description}
+          swipeLeft={this.swipeLeft}
+          swipeRight={this.swipeRight}
         />
       );
     }
