@@ -1,0 +1,29 @@
+{
+  "name": "docer",
+  "version": "1.0.0",
+  "description": "Tinder replica to evaluate coder personality with respect to Imperial Department of Computing ({DOC})",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install -- prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filippovarini/docer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filippovarini/docer/issues"
+  },
+  "homepage": "https://github.com/filippovarini/docer#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.2"
+  }
+}
