@@ -1,5 +1,42 @@
 #scroller {
-  height: 600px;
-  width: 400px;
+  height: var(--web-image-height);
+  width: var(--web-image-width);
   background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: -300px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+}
+
+#body {
+  position: absolute;
+  bottom: 0px;
+  height: var(--web-body-height);
+}
+
+#text-container {
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: white;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#description {
+  font-size: 1;
+}
+
+#icons {
+  width: var(--web-image-width);
+  position: absolute;
+  bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
 }

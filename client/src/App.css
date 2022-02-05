@@ -1,0 +1,17 @@
+:root {
+  --shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  --web-image-height: 600px;
+  --web-image-width: 400px;
+  --mobile-image-height: 10px;
+  --mobile-image-width: 7px;
+  --web-body-height: 200px;
+}
+
+#app {
+  font-family: "Courier Prime", monospace;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  margin: 0;
+}
