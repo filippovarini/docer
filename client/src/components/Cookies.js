@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Cookies.css";
+import "./Components.css";
 
 export class Cookies extends Component {
   render() {
