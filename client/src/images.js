@@ -47,6 +47,53 @@ const images = [
     title: "Start ups",
     description:
       "I receive: 2 years of 80 hour weeks; You recieve: 1000 shares in a worthless company"
+  },
+  {
+    url: "https://cdn.mos.cms.futurecdn.net/HKoTi86VCh6w8ttHS5kL5W.jpg",
+    title: "Green M&M",
+    description:
+      "Some say i have a hard exterior but i'm really a softy on the inside"
+  },
+  {
+    url:
+      "https://static01.nyt.com/images/2014/06/16/world/17iht-letter17/17iht-letter17-superJumbo.jpg",
+    title: "Vlad",
+    description: "Feeling cute, might delete later idk"
+  },
+  {
+    url:
+      "https://www.oakhousefoods.co.uk/media/catalog/product/cache/336111bc363ebdc007831e2145326566/g/3/g3081.jpeg",
+    title: "Marmite",
+    description: "Some people say i'm a bit like marmite"
+  },
+  {
+    url:
+      "https://mocah.org/thumbs/905971-Archlinux-Linux-unixporn-Unix-operating-system.png",
+    title: "Btw i use arch",
+    description: "Btw i use arch"
+  },
+  {
+    url:
+      "https://cdn.discordapp.com/attachments/378467761275273228/939613571975893002/1644091725447.jpg",
+    title: "IC Hack Nando Chips",
+    description: "Yes it wasn't just you. They were very dry"
+  },
+  {
+    url:
+      "https://static.independent.co.uk/2022/01/17/09/bitcoin%20price%20news%20live%20latest.jpg?quality=75&width=982&height=726&auto=webp",
+    title: "Blockchain",
+    description: "What companies to pretend to use"
+  },
+  {
+    url:
+      "https://www.brilliantbrighton.com/wp-content/uploads/1080x1080_Carousel-1_2-450x450.jpg",
+    title: "Pret Subscription",
+    description: "*£25"
+  },
+  {
+    url: "https://i.ytimg.com/vi/1rV-dbDMS18/hqdefault.jpg",
+    title: "Mac",
+    description: "Steve Jobs didn't use deodorant"
   }
 ];
 

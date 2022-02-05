@@ -2,22 +2,52 @@ import React, { Component } from "react";
 import "./Components.css";
 
 export class UploadCV extends Component {
+  state = {
+    name: null,
+    team: null
+  };
+
+  handleChange = e => {
+    this.setState({
+      [e.target.id]: e.target.value
+    });
+  };
+
   render() {
     return (
       <div id="upload-cv">
         <p id="upload-title">Finally...</p>
         <p id="motivation">
-          Our project aims at giving more insightful data from people
-          professional traits to help companies make better decisions on the
-          hiring process. If you are interested, drop us your CV so that we can
-          send it to companies.
+          This test helps comanies better match an applicant's profile with
+          their team. Upload your CV to get company to know you!
         </p>
-        <a
+
+        <form id="credentials">
+          <input
+            id="name"
+            type="text"
+            placeholder="name"
+            onChange={this.handleChange}
+          />
+          <input
+            id="team"
+            type="number"
+            placeholder="team number"
+            onChange={this.handleChange}
+          />
+        </form>
+
+        <p
+          style={
+            this.state.name && this.state.team ? null : { display: "none" }
+          }
           id="upload-button"
-          href="https://drive.google.com/drive/folders/1p2uCQFIg4tYDeciAB80E_LQBLMZ1UtDu?usp=sharing"
+          onClick={() =>
+            this.props.handleSubmit(this.state.name, this.state.team)
+          }
         >
           UPLOAD
-        </a>
+        </p>
       </div>
     );
   }

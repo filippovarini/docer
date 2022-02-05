@@ -35,7 +35,14 @@
   border-radius: 5px;
   box-shadow: var(--shadow);
   margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#credentials {
+  display: flex;
   margin-top: 50px;
+  justify-content: space-around;
 }
 
 /* HEADER */

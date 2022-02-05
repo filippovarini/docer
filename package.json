@@ -24,6 +24,7 @@
   "homepage": "https://github.com/filippovarini/docer#readme",
   "dependencies": {
     "concurrently": "^7.0.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
   }
 }

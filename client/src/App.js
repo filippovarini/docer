@@ -18,20 +18,39 @@ export class App extends Component {
       answers: [...this.state.answers, liked],
       index: this.state.index + 1
     });
-    if (this.state.index === images.length) {
-      this.saveAnswers();
-    }
   };
 
-  saveAnswers = () => {
-    console.log(this.state.answers);
+  handleSubmit = (name, team) => {
+    const answer = {
+      name,
+      team,
+      answers: this.state.answers
+    };
+
+    console.log(answer);
+
+    fetch("/api/answer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({ answer })
+    })
+      .then(res => alert("success"))
+      .catch(e => console.log(e));
+
+    window.open(
+      "https://drive.google.com/drive/folders/1p2uCQFIg4tYDeciAB80E_LQBLMZ1UtDu?usp=sharing",
+      "_blank"
+    );
   };
 
   render() {
     let body = null;
     if (this.state.index === images.length) {
       console.log(this.state.answers);
-      body = <UploadCV />;
+      body = <UploadCV handleSubmit={this.handleSubmit} />;
     } else {
       const image = images[this.state.index];
       body = (

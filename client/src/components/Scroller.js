@@ -16,12 +16,14 @@ export class Scroller extends Component {
             className="far fa-thumbs-up choice"
           ></i>
         </div>
-        <div id="body">
-          <div id="text-container">
-            <p id="title">{this.props.title}</p>
-            <p id="description">{this.props.description}</p>
+        <div id="gradient">
+          <div id="body">
+            <div id="text-container">
+              <p id="title">{this.props.title}</p>
+              <p id="description">{this.props.description}</p>
+            </div>
+            <img id="icons" src={image} alt="icons" />
           </div>
-          <img id="icons" src={image} alt="icons" />
         </div>
       </div>
     );

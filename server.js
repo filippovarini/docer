@@ -1,10 +1,18 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
+const db = require("./db/MongoDB");
+
+/* Routers */
+const answerRouter = require("./routes/answer");
 
 const app = express();
 
+/* Connect database */
+db.connect();
+
 app.use(bodyParser.json());
+app.use("/api/answer", answerRouter);
 
 // rendering static assets
 if (process.env.NODE_ENV === "production") {
