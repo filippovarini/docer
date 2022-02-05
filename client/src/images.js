@@ -12,8 +12,7 @@ const images = [
     description: "Recently divorced, looking to party"
   },
   {
-    url:
-      "https://blogs.imperial.ac.uk/computing/files/2019/10/Chloe-Lau-2-e1573493672275-232x300.jpg",
+    url: "https://tinyurl.com/5fpm8999",
     title: "DocSoc",
     description:
       "I don't know if you knew but IC hack is the biggest student run hackathon in the UK"

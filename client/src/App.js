@@ -41,7 +41,7 @@ export class App extends Component {
       .catch(e => console.log(e));
 
     window.open(
-      "https://drive.google.com/drive/folders/1p2uCQFIg4tYDeciAB80E_LQBLMZ1UtDu?usp=sharing",
+      "https://docs.google.com/forms/d/e/1FAIpQLSensKxuhaU_FbjvDnVSXheJwGLhyOevXviHEJT1Cu6iINP2Zg/viewform",
       "_blank"
     );
   };
