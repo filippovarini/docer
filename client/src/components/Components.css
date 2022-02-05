@@ -78,8 +78,7 @@
 #cookies {
   position: absolute;
   box-shadow: var(--shadow);
-  border-radius: 5px;
-  bottom: 10px;
+  bottom: 0px;
   box-sizing: border-box;
   padding: 10px;
   width: 100vw;
@@ -94,7 +93,25 @@
   top: 5px;
 }
 
-@media screen and (max-width: 500px) {
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.button {
+  font-weight: 600;
+  color: gray;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+@media screen and (max-width: 700px) {
   #cookies {
     display: none;
   }
