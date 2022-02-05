@@ -18,7 +18,7 @@ export class App extends Component {
       answers: [...this.state.answers, liked],
       index: this.state.index + 1
     });
-    if (this.state.index == images.length) {
+    if (this.state.index === images.length) {
       this.saveAnswers();
     }
   };
@@ -29,7 +29,7 @@ export class App extends Component {
 
   render() {
     let body = null;
-    if (this.state.index == images.length) {
+    if (this.state.index === images.length) {
       console.log(this.state.answers);
       body = <UploadCV />;
     } else {
