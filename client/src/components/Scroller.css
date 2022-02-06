@@ -14,6 +14,13 @@
   z-index: 1;
 }
 
+#scroller-header {
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  top: -45px;
+}
+
 #icons-container {
   height: 60px;
   position: absolute;
@@ -72,7 +79,7 @@
 }
 
 #description {
-  font-size: 1;
+  font-size: 1.2rem;
 }
 
 #icons {

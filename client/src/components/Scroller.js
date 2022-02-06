@@ -6,6 +6,7 @@ export class Scroller extends Component {
   render() {
     return (
       <div id="scroller" style={{ backgroundImage: `url(${this.props.url})` }}>
+        <p id="scroller-header">{this.props.header}</p>
         <div id="icons-container">
           <i
             onClick={() => this.props.saveChoice(false)}

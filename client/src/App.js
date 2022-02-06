@@ -58,6 +58,7 @@ export class App extends Component {
           url={image.url}
           title={image.title}
           description={image.description}
+          header={image.header}
           saveChoice={this.saveChoice}
         />
       );
