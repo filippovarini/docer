@@ -76,6 +76,7 @@
 
 /* COOKIES */
 #cookies {
+  display: none;
   position: absolute;
   box-shadow: var(--shadow);
   bottom: 0px;
