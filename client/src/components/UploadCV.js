@@ -31,7 +31,7 @@ export class UploadCV extends Component {
           />
           <input
             id="team"
-            type="number"
+            type="text"
             placeholder="team number"
             onChange={this.handleChange}
           />

@@ -7,7 +7,7 @@ const AnswerSchema = new Schema({
     required: true
   },
   team: {
-    type: Number,
+    type: String,
     required: true
   },
   answers: {
