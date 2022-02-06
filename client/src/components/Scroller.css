@@ -92,9 +92,10 @@
     height: var(--mobile-image-height);
     width: var(--mobile-image-width);
     background-size: cover;
+    position: absolute;
     margin: 0 auto;
     border-radius: 3px;
-    top: 0;
+    top: 30px;
     left: 0;
     box-shadow: var(--shadow);
   }
