@@ -27,9 +27,7 @@ export class App extends Component {
       answers: this.state.answers
     };
 
-    console.log(answer);
-
-    fetch("/api/answer", {
+    fetch("https://docer-ichack.herokuapp.com/api/answer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
