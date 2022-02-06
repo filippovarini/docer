@@ -1,6 +1,7 @@
 #scroller {
   height: var(--web-image-height);
   width: var(--web-image-width);
+  /* background-image: url("../images_container/elon.jpeg"); */
   background-size: cover;
   background-position: center;
   margin: 0 auto;

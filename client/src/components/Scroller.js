@@ -5,7 +5,13 @@ import image from "../icons.png";
 export class Scroller extends Component {
   render() {
     return (
-      <div id="scroller" style={{ backgroundImage: `url(${this.props.url})` }}>
+      <div
+        id="scroller"
+        style={{
+          backgroundImage:
+            "url(" + require(`../images_container/${this.props.url}`) + ")"
+        }}
+      >
         <p id="scroller-header">{this.props.header}</p>
         <div id="icons-container">
           <i
