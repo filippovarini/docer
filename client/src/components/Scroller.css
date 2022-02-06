@@ -4,14 +4,12 @@
   background-size: cover;
   background-position: center;
   margin: 0 auto;
-  position: absolute;
-  margin-top: -300px;
-  top: 50%;
-  left: 50%;
-  margin-left: -200px;
+  margin-top: 200px;
+  position: relative;
   border-radius: 3px;
   box-shadow: var(--shadow);
   z-index: 1;
+  border: 2px solid black;
 }
 
 #scroller-header {
