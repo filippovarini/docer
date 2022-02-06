@@ -6,7 +6,12 @@ export class Header extends Component {
   render() {
     return (
       <div id="header">
-        <img id="logo" src={logo} alt="logo" />
+        <img
+          onClick={() => (window.location = "/")}
+          id="logo"
+          src={logo}
+          alt="logo"
+        />
       </div>
     );
   }

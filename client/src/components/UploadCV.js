@@ -27,11 +27,13 @@ export class UploadCV extends Component {
             id="name"
             name="name"
             type="text"
+            required
             placeholder="name"
             onChange={this.handleChange}
           />
           <input
             name="team"
+            required
             id="team"
             type="text"
             placeholder="team number"
@@ -44,7 +46,7 @@ export class UploadCV extends Component {
           style={{ display: "none" }}
           value={this.props.answers}
         />
-        <input type="file" name="file" />
+        <input type="file" name="file" required />
         <input id="submit-button" type="submit" />
       </form>
     );
