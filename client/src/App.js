@@ -22,13 +22,10 @@ export class App extends Component {
     });
   };
 
-  handleSubmit = (name, team) => {
-    const answer = {
-      name,
-      team,
-      answers: this.state.answers
-    };
-
+  handleSubmit = e => {
+    e.preventDefault()
+    this.setState({ formDone: true })
+/* 
     fetch("https://docer-ichack.herokuapp.com/api/answer", {
       method: "POST",
       headers: {
@@ -37,13 +34,13 @@ export class App extends Component {
       },
       body: JSON.stringify({ answer })
     })
-      .then(res => this.setState({ formDone: true }))
+      .then(res => )
       .catch(e => console.log(e));
 
     window.open(
       "https://docs.google.com/forms/d/13K5gdATUprxLywVXY2K-YZ2jf8hMehEzUHQV6Le0uSY/edit",
       "_blank"
-    );
+    ); */
   };
 
   render() {

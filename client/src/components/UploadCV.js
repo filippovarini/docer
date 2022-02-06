@@ -18,9 +18,9 @@ export class UploadCV extends Component {
     const contestant = (
       <form
         id="credentials"
-        action="http://127.0.0.1:5000/cv-parse"
-        method="POST"
-        enctype="multipart/form-data"
+        // action="http://127.0.0.1:5000/cv-parse"
+        // method="POST"
+        // enctype="multipart/form-data"
       >
         <div id="text-input">
           <input
@@ -47,16 +47,13 @@ export class UploadCV extends Component {
           value={this.props.answers}
         />
         <input type="file" name="file" required />
-        <input id="submit-button" type="submit" />
+        <input id="submit-button" type="submit" onClick={this.props.handleSubmit} />
       </form>
     );
 
     const company = (
       <form
         id="credentials"
-        action="http://127.0.0.1:5000/company-profile"
-        method="POST"
-        enctype="multipart/form-data"
       >
         <div id="text-input">
           <input
@@ -73,7 +70,7 @@ export class UploadCV extends Component {
           style={{ display: "none" }}
           value={this.props.answers}
         />
-        <input id="submit-button" type="submit" />
+        <input id="submit-button" type="submit" onClick={this.props.handleSubmit} />
       </form>
     );
 
