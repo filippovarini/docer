@@ -5,11 +5,10 @@ export class Cookies extends Component {
   render() {
     return (
       <div id="cookies">
-        We value your privacy. We and our partners use trackers to measure the
-        audience of our website and to provide you with offers and improve our
-        own Tinder marketing operations.
+        This fake cookie box is just to say that the purpose of these images is
+        just entertaining and not at all commertial. Also we ask for{" "}
         <i style={{ textDecoration: "underline" }}>
-          More info on cookies and providers we use.
+          CVs, which we confidentially use for matching students with companies.{" "}
         </i>{" "}
         You can withdraw your consent at any time in your settings.
         <div id="buttons">
