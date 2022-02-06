@@ -1,3 +1,7 @@
+input {
+  display: block;
+}
+
 #upload-cv {
   width: 350px;
   height: 300px;
@@ -22,7 +26,10 @@
   margin: 0 auto;
 }
 
-#upload-button {
+#submit-button {
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
   background-image: linear-gradient(to right, #fd297b, #ff5864);
   width: 150px;
   height: 30px;
@@ -35,14 +42,26 @@
   border-radius: 5px;
   box-shadow: var(--shadow);
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   cursor: pointer;
 }
 
+#form {
+  margin-top: 30px;
+}
+
 #credentials {
+  margin-top: 20px;
+}
+
+#text-input {
   display: flex;
-  margin-top: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#company-check {
+  display: initial;
 }
 
 /* HEADER */

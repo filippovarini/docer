@@ -6,6 +6,7 @@ import UploadCV from "./components/UploadCV";
 import FormDone from "./components/FormDone";
 import images from "./images";
 import "./App.css";
+import bitString from "./bitString";
 
 export class App extends Component {
   state = {
@@ -48,8 +49,12 @@ export class App extends Component {
   render() {
     let body = null;
     if (this.state.index === images.length) {
-      console.log(this.state.answers);
-      body = <UploadCV handleSubmit={this.handleSubmit} />;
+      body = (
+        <UploadCV
+          handleSubmit={this.handleSubmit}
+          answers={bitString(this.state.answers)}
+        />
+      );
     } else {
       const image = images[this.state.index];
       body = (
