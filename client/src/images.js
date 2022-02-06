@@ -3,8 +3,7 @@ const images = [
     url:
       "https://qph.fs.quoracdn.net/main-qimg-b929a1e986ebd8f0e84dea3fe4c65265",
     title: "Elon Musk",
-    description:
-      "I have no hair but I sent you a pic of my rocket. Plz respond",
+    description: "I sent you a pic of my rocket. Plz respond",
     header: "Would you be like?"
   },
   {

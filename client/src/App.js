@@ -10,7 +10,8 @@ import "./App.css";
 export class App extends Component {
   state = {
     index: 0,
-    answers: []
+    answers: [],
+    formDone: false
   };
 
   saveChoice = liked => {
@@ -35,7 +36,7 @@ export class App extends Component {
       },
       body: JSON.stringify({ answer })
     })
-      .then(res => alert("success"))
+      .then(res => this.setState({ formDone: true }))
       .catch(e => console.log(e));
 
     window.open(
