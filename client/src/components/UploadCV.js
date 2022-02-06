@@ -18,7 +18,7 @@ export class UploadCV extends Component {
     const contestant = (
       <form
         id="credentials"
-        action="https://cv-parser-ichack.herokuapp.com/cv-parse"
+        action="http://127.0.0.1:5000/cv-parse"
         method="POST"
         enctype="multipart/form-data"
       >
@@ -54,7 +54,7 @@ export class UploadCV extends Component {
     const company = (
       <form
         id="credentials"
-        action="https://cv-parser-ichack.herokuapp.com/company-profile"
+        action="http://127.0.0.1:5000/company-profile"
         method="POST"
         enctype="multipart/form-data"
       >
